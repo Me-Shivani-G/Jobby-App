@@ -1,53 +1,96 @@
-.home-container {
-  padding: 40px;
-  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
-  height: 100vh;
+.nav-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar-mobile-container {
+  background-color: #272727;
   background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.home-heading {
-  color: #ffffff;
-  font-family: 'Roboto';
-  font-size: 50px;
-}
-
-.home-paragraph {
-  color: #ffffff;
-  font-family: 'Roboto';
-  font-size: 25px;
-  width: 50%;
-}
-
-.home-jobs-button {
-  color: #ffffff;
-  background-color: #6366f1;
-  border: 0;
-  border-radius: 5px;
-  width: 100px;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: 'Roboto';
-  padding: 5px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.retry-btn-link {
+.nav-link {
   text-decoration: none;
+  color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  .home-container {
-    padding: 15px;
-    flex-grow: 1;
-  }
+.website-logo {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 
-  .home-heading {
-    font-size: 25px;
-  }
+.nav-menu-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  .home-paragraph {
-    font-size: 20px;
-    width: 100%;
+.nav-menu-item-mobile {
+  margin: 10px;
+}
+
+.nav-menu-icon {
+  color: #ffffff;
+  height: 25px;
+  width: 25px;
+}
+
+.nav-bar-large-container {
+  display: flex;
+  background-color: #272727;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar-large-container {
+    display: none;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar-mobile-container {
+    display: none;
+  }
+  .website-logo {
+    width: 160px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-menu-item {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.button-container {
+  margin-right: 40px;
+}
+
+.logout-desktop-btn {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 16px;
+  color: #ffffff;
+  background-color: #0967d2;
+  border: none;
+  border-radius: 4px;
+  margin-left: 14px;
+  cursor: pointer;
+  outline: none;
+  width: 120px;
 }
